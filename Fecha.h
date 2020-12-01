@@ -1,3 +1,7 @@
+// Parte Individual
+// Realizada por Eduardo Joel Cortez Valente
+// A01746664
+
 #ifndef FECHA_C
 #define FECHA_C
 #include <iostream>
@@ -21,7 +25,7 @@ class Fecha{
 
     void setDia(int dia){this->dia=dia;}
     void setMes(int mes){this->mes=mes;}
-    void setMes(int anio){this->anio=anio;}
+    void setAnio(int anio){this->anio=anio;}
 
 }; //Clase fecha
 
