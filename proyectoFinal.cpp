@@ -68,7 +68,7 @@ int main()
     cout << "<3> Clase Informe\n";
     cout << "<4> Clase Cliente\n";
     cout << "<5> Clase Adquisicion\n";
-    cout << "<6> YARI AQUI PONES LA CLASE DE TU TRABAJO INDIVIDUAL :)\n";
+    cout << "<6> Clase Empresa (Yaritzi Itzayana Nicio Nicolas - A01745837)\n";
     cout << "<7> para salir del programa\n";
 
     while (op != 7)
