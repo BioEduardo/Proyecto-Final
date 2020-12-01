@@ -1,6 +1,8 @@
 #include <iostream>
 #include "Estado.h"
 #include "Informe.h"
+#include "Cliente.h"
+#include "Adquisicion.h"
 using namespace std;
 #include <string>
 
