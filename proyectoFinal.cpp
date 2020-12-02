@@ -83,12 +83,15 @@ void pruebaAdquisicion(){
     
     adqui1.setProducto("Libro El visitante de Stephen King");
     adqui1.setDescripcion("El visitante de Stephen King. Dimensiones 16 x 3.4 x 23.6 cm. Idioma Espaniol. Editorial Plaza y Janes");
-    adqui1.setMonto(576);
+    adqui1.setMonto(576.93);
 
-    cout << "Producto: " << adqui1.getProducto() << endl;
-    cout << "Descripcion: "<< adqui1.getDescripcion() << endl;
-    cout << "Monto: " << adqui1.getMonto() << " pesos" << endl;
-    adqui1.getdatosEmpresa();
+    cout << "Producto: " <<adqui1.getProducto() << endl;
+    cout << "Descripcion: \n"<< adqui1.getDescripcion() << endl;
+    cout << "Monto: " << adqui1.getMonto() << endl;
+
+    adqui1.datEm();
+
+    cout << "\n*****Cancelacion de compra"<< endl;
     adqui1.cancelar_compra();
     cout << adqui1.getCancelacion(); 
     
@@ -122,7 +125,7 @@ int main()
 
     while (op != 7)
     {   
-        cout << "\n\n ------ Opcion inicial: "; cin >> op;
+        cout << "\n ------ Opcion inicial: "; cin >> op;
 
         switch (op) {
         case 1:

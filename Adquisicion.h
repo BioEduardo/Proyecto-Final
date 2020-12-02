@@ -54,6 +54,17 @@ class Adquisicion{
             }
     }
 
+    void datEm(){
+        datos_de_empresa.setNombre("Amazon");
+        datos_de_empresa.setUbicacion("Seattle, Washington, Estados Unidos");
+        datos_de_empresa.setCorreo("atencioncliente@amazon.com");
+        datos_de_empresa.setTelefono("55262966");
+        cout << "\nNombre de la empresa:  " << datos_de_empresa.getNombre() << endl;
+        cout << "Ubicacion de la empresa: " << datos_de_empresa.getUbicacion() << endl;
+        cout << "Correo de la empresa: " << datos_de_empresa.getCorreo() << endl;
+        cout << "Telefono de la empresa: " << datos_de_empresa.getTelefono() << endl;
+        
+    }
 
 };// Clase Adquisicion 
 
