@@ -59,6 +59,55 @@ void pruebaInforme(){
     cout << "El tipo de producto ahora es " << compre.getTipoDeProducto() << endl;
 
 }
+void pruebaCliente(){
+    cout << "\nPrueba Cliente" << endl;
+    cout << "La prueba de esta clase funciona como si fuera la pagina de configuracion en una tienda online" << endl;
+    Cliente client1;
+    client1.setNombre("Juan Perez");
+    client1.setDireccion("Calle de los Robles No. 12 Col. Prados de Iztacala Atizapan Estado de Mexico" );
+    client1.setReferencias("Entre Calle 2 y Calle 5");
+
+    cout << "Nombre: " << client1.getNombre() << endl;
+    cout << "Direccion: " << client1.getDireccion() << endl;
+    cout << "Referencias actuales: " << client1.getReferencias() << endl;
+
+    cout << "\n*****Actualizar referencias"<< endl;
+    client1.actualizarReferencias();
+}
+
+void pruebaAdquisicion(){
+    cout << "\nPrueba Adquisicion" << endl;
+    Adquisicion adqui1;
+    cout << "La prueba de esta clase funciona como si fuera el usuario que checa su pedido para confirmar que es lo que espera de su producto." << endl;
+    cout << "Esta clase utiliza tambien la clase Empresa, por lo que se pondran los valores de una empresa." << endl;
+    
+    adqui1.setProducto("Libro El visitante de Stephen King");
+    adqui1.setDescripcion("El visitante de Stephen King. Dimensiones 16 x 3.4 x 23.6 cm. Idioma Espaniol. Editorial Plaza y Janes");
+    adqui1.setMonto(576.93);
+
+    cout << "Producto: " <<adqui1.getProducto() << endl;
+    cout << "Descripcion: \n"<< adqui1.getDescripcion() << endl;
+    cout << "Monto: " << adqui1.getMonto() << endl;
+    adqui1.getdatosEmpresa();
+    adqui1.cancelar_compra();
+    cout << adqui1.getCancelacion(); 
+    
+}
+
+void pruebaEmpresa(){
+    cout << "\nPrueba Empresa" << endl;
+    cout << "Los metodos de esta clase no pueden ser modificados a peticion del usuario" << endl;
+    Empresa emprEj;
+    emprEj.setNombre("eBay");
+    emprEj.setUbicacion("San Jose California Estados Unidos");
+    emprEj.setCorreo("atencioncliente@ebay.com");
+    emprEj.setTelefono("1234567");
+    cout << "Empresa: " << emprEj.getNombre() << endl;
+    cout << "Ubicacion de la empresa: " << emprEj.getUbicacion() << endl;
+    cout << "Correo de la empresa: " << emprEj.getCorreo() << endl;
+    cout << "Numero telefonico de la empresa: " << emprEj.getTelefono() << endl;
+}
+
 int main()
 {
     int op;
@@ -68,7 +117,7 @@ int main()
     cout << "<3> Clase Informe\n";
     cout << "<4> Clase Cliente\n";
     cout << "<5> Clase Adquisicion\n";
-    cout << "<6> Clase Empresa (Yaritzi Itzayana Nicio Nicolas - A01745837)\n";
+    cout << "<6> Clase Empresa (Parte individual de Yaritzi Itzayana Nicio Nicolas - A01745837)\n";
     cout << "<7> para salir del programa\n";
 
     while (op != 7)
@@ -86,10 +135,13 @@ int main()
             pruebaInforme();
             break;
         case 4:
+            pruebaCliente();
             break;
         case 5:
+            pruebaAdquisicion();
             break;
         case 6:
+            pruebaEmpresa();
             break;
         case 7:
             break;
