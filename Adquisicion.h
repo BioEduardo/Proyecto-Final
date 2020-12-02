@@ -24,8 +24,8 @@ class Adquisicion{
       
 
     void setProducto(string producto){this->producto = producto;}
-    void setDescripcion(string dscripcion){this->descripcion = descripcion;}
-    void setMonto(int Monto){this->monto = monto;}
+    void setDescripcion(string descripcion){this->descripcion = descripcion;}
+    void setMonto(int monto){this->monto = monto;}
 
     string getProducto(){return producto;}
     string getDescripcion(){return descripcion;}

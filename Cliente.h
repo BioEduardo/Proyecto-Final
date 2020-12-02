@@ -31,11 +31,10 @@ class Cliente{
         cout << "<2> No, mis referencias estan actualizadas" << endl;
         cout << "Seleccione la opcion que desea realizar: " ; cin >> opcion;
 
-
         switch (opcion)
             {
             case 1:
-                cout << "Referencias: " ; cin >> referencias;
+                cout << "Referencias (solo codigo postal): " ; cin >> referencias;
                 cout << "Las referencias se han actualizado";
                 break;
             case 2:
